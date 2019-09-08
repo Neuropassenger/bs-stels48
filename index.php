@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css?v=1.0.0">
     <link rel="stylesheet" href="css/media.css?v=1.0.0">
-
 </head>
 
 <body>
