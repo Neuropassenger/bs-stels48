@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css?v=1.0.0">
     <link rel="stylesheet" href="css/media.css?v=1.0.0">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
     <div class="a_goods flex_main flex_wrap flex_jcontent-around">
         <div class="a_position">
             <h4>STELS Navigator 630 MD</h4>
-            <img src="img/navigator630.png" alt="stells navigator 630">
+            <a href="img/navigator630@2x.png" data-lightbox="bikes"><img src="img/navigator630.png" alt="stells navigator 630"></a>
             <table>
                 <tr>
                     <td>Тип рамы</td>
@@ -67,7 +69,7 @@
         </div>
         <div class="a_position">
             <h4>STELS Navigator 300 Gent</h4>
-            <img src="img/navigator300gent.png" alt="stells navigator 300">
+            <a href="img/navigator300gent@2x.png" data-lightbox="bikes"><img src="img/navigator300gent.png" alt="stells navigator 300"></a>
             <table>
                 <tr>
                     <td>Тип рамы</td>
@@ -102,7 +104,7 @@
         </div>
         <div class="a_position">
             <h4>STELS Miss 5000 MD</h4>
-            <img src="img/miss5000md.png" alt="stells miss 5000">
+            <a href="img/miss5000md@2x.png" data-lightbox="bikes"><img src="img/miss5000md.png" alt="stells miss 5000"></a>
             <table>
                 <tr>
                     <td>Тип рамы</td>
@@ -137,7 +139,7 @@
         </div>
         <div class="a_position">
             <h4>STELS Focus MD</h4>
-            <img src="img/focusmd.png" alt="stells focus MD">
+            <a href="img/focusmd@2x.png" data-lightbox="bikes"><img src="img/focusmd.png" alt="stells focus MD"></a>
             <table>
                 <tr>
                     <td>Тип рамы</td>
@@ -172,7 +174,7 @@
         </div>
         <div class="a_position">
             <h4>STELS Pilot 950 MD</h4>
-            <img src="img/pilot950md.png" alt="stells pilot 950">
+            <a href="img/pilot950md@2x.png" data-lightbox="bikes"><img src="img/pilot950md.png" alt="stells pilot 950"></a>
             <table>
                 <tr>
                     <td>Тип рамы</td>
@@ -207,7 +209,7 @@
         </div>
         <div class="a_position">
             <h4>STELS Navigator 500 V</h4>
-            <img src="img/navigator500v.png" alt="stells navigator 500">
+            <a href="img/navigator500v@2x.png" data-lightbox="bikes"><img src="img/navigator500v.png" alt="stells navigator 500"></a>
             <table>
                 <tr>
                     <td>Тип рамы</td>
