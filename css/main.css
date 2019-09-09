@@ -2,6 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #323232;
+    fon
 }
 
 h2 {
@@ -15,13 +16,35 @@ h4 {
     text-align: center;
 }
 
+button {
+    width: 280px;
+    height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #97D700;
+    font-size: 11px;
+    letter-spacing: 0.33px;
+    outline: none;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.a_wrap {
+    padding-bottom: 50px;
+}
+
+.center {
+    text-align: center;
+}
 /* Каталог */
 .a_position {
     padding: 0 22px 20px 22px;
     width: 300px;
     border: 1px solid #97D700;
     border-radius: 30px 0 30px 0;
-    margin-bottom: 55px;
+    margin: 0 50px 55px 50px;
 }
 
 .a_catalog img {
@@ -56,11 +79,49 @@ h4 {
 .a_catalog_button {
     height: 30px;
     width: 100%;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    background-color: #97D700;
-    font-size: 11px;
-    letter-spacing: 0.33px;
+    margin: 0;
 }
+
+/* О нас */
+
+.a_about h4{
+    text-align: left;
+}
+
+.a_wrap img {
+    width: 370px;
+    margin: 10px 20px;
+    border-radius: 30px 0 30px 0;
+}
+
+.a_decrip {
+    width: 50%;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+/* Оплата и доставка */
+.a_conditions h2 {
+    margin-bottom: 30px;
+}
+
+.a_conditions .fa-li {
+    font-size: 25px;
+    color: #97D700;
+}
+
+.a_conditions li {
+    padding-bottom: 30px;
+}
+.a_payment, .a_delivery {
+    width: 35%;
+    min-width: 400px;
+    padding: 0 40px
+}
+
+/* О велосипедах */
+
+.a_about_bikes h4{
+    text-align: left;
+}
+
