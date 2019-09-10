@@ -2,6 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #323232;
+    font-size: 14px;
 }
 
 h2 {
@@ -36,6 +37,7 @@ button {
 
 .center {
     text-align: center;
+    margin: 0 auto;
 }
 /* Каталог */
 .a_position {
@@ -122,5 +124,56 @@ button {
 
 .a_about_bikes h4{
     text-align: left;
+}
+
+/* Отзывы */
+
+.a_one_comment {
+    width: 50%;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.owl-item img {
+    width: 115px !important;
+}
+
+.a_one_comment p {
+    max-width: 600px;
+    margin: 15px auto;
+    text-align: justify;
+}
+
+.a_comments .owl-prev {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    height: 200px;
+    margin: auto 0;
+    text-align: right;
+}
+
+.a_comments .owl-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    height: 200px;
+    margin: auto 0;
+    text-align: left
+}
+
+.a_comments .owl-dots {
+    display: none;
+}
+
+.a_comments button span {
+    padding: 0 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #97D700;
 }
 
