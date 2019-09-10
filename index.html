@@ -23,19 +23,35 @@
 <script src="js/common.js"></script>
 
 <header>
-    <div>
-        Лого
+    <div class="logo">
+        <p>Steel</p>
     </div>
     <nav>
-        Навигация
+        <ul class="main-menu">
+            <li><a href="catalog">Каталог</a></li>
+            <li><a href="about">О Нас</a></li>
+            <li><a href="rules">Доставка и Оплата</a></li>
+            <li><a href="stels">О Велосипедах</a></li>
+            <li><a href="contact">Контакты</a></li>
+            <li><a href="reviews">Отзывы</a></li>
+            <li><a href="Обратный Звонок">Обратный Звонок</a></li>
+        </ul>
     </nav>
     <div>
-        Телефон
+        <i class="fas fa-phone" style="color: green;"></i>8 900 888
     </div>
 </header>
 
 <section>
-    Первый экран
+    <div class="form-action">
+        <h1>Велосипеды STELS</h1>
+        <p> По самым вигодним ценам на рынке </p>
+        <form class="act" action="sender.php" method="post">
+            <input type="text" placeholder="Имя" >
+            <input type="tel" placeholder="Телефон">
+            <input type="text" placeholder="Модель">
+            <button type="submit" class="cta">ЗАКАЗАТЬ</button>
+    </div>
 </section>
 
 <section class="a_catalog">
@@ -78,8 +94,8 @@
             </table>
             <button class="a_catalog_button" data-fancybox data-src="#hidden-navigator-630" href="javascript:;" >заказать</button>
             <div style="display: none;" id="hidden-navigator-630">
-	            <h2>Здесь!</h2>
-	            <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
+                <h2>Здесь!</h2>
+                <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
             </div>
         </div>
         <div class="a_position">
@@ -117,8 +133,8 @@
             </table>
             <button class="a_catalog_button" data-fancybox data-src="#hidden-navigator-300" href="javascript:;" >заказать</button>
             <div style="display: none;" id="hidden-navigator-300">
-	            <h2>Здесь!</h2>
-	            <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
+                <h2>Здесь!</h2>
+                <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
             </div>
         </div>
         <div class="a_position">
@@ -156,8 +172,8 @@
             </table>
             <button class="a_catalog_button" data-fancybox data-src="#hidden-miss-5000" href="javascript:;" >заказать</button>
             <div style="display: none;" id="hidden-miss-5000">
-	            <h2>Здесь!</h2>
-	            <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
+                <h2>Здесь!</h2>
+                <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
             </div>
         </div>
         <div class="a_position">
@@ -195,8 +211,8 @@
             </table>
             <button class="a_catalog_button" data-fancybox data-src="#hidden-focus" href="javascript:;" >заказать</button>
             <div style="display: none;" id="hidden-focus">
-	            <h2>Здесь!</h2>
-	            <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
+                <h2>Здесь!</h2>
+                <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
             </div>
         </div>
         <div class="a_position">
@@ -234,8 +250,8 @@
             </table>
             <button class="a_catalog_button" data-fancybox data-src="#hidden-pilot-950" href="javascript:;" >заказать</button>
             <div style="display: none;" id="hidden-pilot-950">
-	            <h2>Здесь!</h2>
-	            <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
+                <h2>Здесь!</h2>
+                <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
             </div>
         </div>
         <div class="a_position">
@@ -273,8 +289,8 @@
             </table>
             <button class="a_catalog_button" data-fancybox data-src="#hidden-navigator-500" href="javascript:;" >заказать</button>
             <div style="display: none;" id="hidden-navigator-500">
-	            <h2>Здесь!</h2>
-	            <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
+                <h2>Здесь!</h2>
+                <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
             </div>
         </div>
     </div>
@@ -335,8 +351,8 @@
 </section>
 
 <section class="a_about_bikes">
-<div>
-    <h2>О велосипедах STELS</h2>
+    <div>
+        <h2>О велосипедах STELS</h2>
     </div>
     <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
         <img src="img/zavod1.png" alt="завод велосипедов">
@@ -355,7 +371,7 @@
                 <li>Проверка входных комплектующий на отсутствие повреждений и соответствие спецификации</li>
                 <li>Контроль за корректной установкой комплектующих на раму, настройка и проверка навесного оборудования</li>
                 <li>Проверка комплектности и правильности укладки велосипеда в коробку</li>
-            </ul> 
+            </ul>
         </div>
     </div>
     <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
