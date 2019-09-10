@@ -12,8 +12,19 @@ h2 {
     margin-bottom: 60px;
 }
 
+p {
+    line-height: 26px;
+}
+
 h4 {
     text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+main {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 button {
@@ -24,10 +35,11 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #97D700;
-    font-size: 11px;
-    letter-spacing: 0.33px;
+    font-size: 13px;
+    letter-spacing: 0.39px;
     outline: none;
     margin-bottom: 100px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -42,10 +54,18 @@ button {
 /* Каталог */
 .a_position {
     padding: 0 22px 20px 22px;
-    width: 300px;
+    width: 256px;
     border: 1px solid #97D700;
     border-radius: 30px 0 30px 0;
-    margin: 0 50px 55px 50px;
+    margin: 0 30px 55px 30px;
+}
+
+.a_goods {
+    margin-bottom: 70px;
+}
+
+.a_catalog td {
+    line-height: 18px;
 }
 
 .a_catalog img {
@@ -65,7 +85,7 @@ button {
 }
 
 .a_catalog table td {
-    padding: 3px 9px;
+    padding: 3px 8px;
     border-radius: 3px 10px 3px 10px;
 }
 
@@ -81,16 +101,25 @@ button {
     height: 30px;
     width: 100%;
     margin: 0;
+    font-size: 11px;
+    letter-spacing: 0.33px;
 }
 
 /* О нас */
 
-.a_about h4{
+.a_about h4 {
+    margin-top: 0;
     text-align: left;
+}
+
+.a_about .a_wrap a {
+    color: #97D700;
+    text-decoration: none;
 }
 
 .a_wrap img {
     width: 370px;
+    height: 230px;
     margin: 10px 20px;
     border-radius: 30px 0 30px 0;
 }
@@ -117,16 +146,25 @@ button {
 .a_payment, .a_delivery {
     width: 35%;
     min-width: 400px;
-    padding: 0 40px
+    padding: 30px 40px 10px;
 }
 
 /* О велосипедах */
 
-.a_about_bikes h4{
+.a_about_bikes h4 {
+    margin-top: 0;
     text-align: left;
 }
 
+.a_about_bikes b {
+    font-weight: 600;
+}
+
 /* Отзывы */
+
+.a_comments b {
+    font-weight: 600;
+}
 
 .a_one_comment {
     width: 50%;
@@ -177,3 +215,16 @@ button {
     color: #97D700;
 }
 
+/* Контакты */
+.a_contacts_info p {
+    padding-bottom: 20px;
+}
+
+.a_contacts_info b {
+    font-weight: 600;
+}
+
+#map {
+    width: 500px;
+    height: 400px;
+}
