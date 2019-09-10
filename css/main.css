@@ -2,6 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #323232;
+    fon
 }
 
 h2 {
@@ -15,13 +16,35 @@ h4 {
     text-align: center;
 }
 
+button {
+    width: 280px;
+    height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #97D700;
+    font-size: 11px;
+    letter-spacing: 0.33px;
+    outline: none;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.a_wrap {
+    padding-bottom: 50px;
+}
+
+.center {
+    text-align: center;
+}
 /* Каталог */
 .a_position {
     padding: 0 22px 20px 22px;
     width: 300px;
     border: 1px solid #97D700;
     border-radius: 30px 0 30px 0;
-    margin-bottom: 55px;
+    margin: 0 50px 55px 50px;
 }
 
 .a_catalog img {
@@ -56,36 +79,49 @@ h4 {
 .a_catalog_button {
     height: 30px;
     width: 100%;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    background-color: #97D700;
-    font-size: 11px;
-    letter-spacing: 0.33px;
+    margin: 0;
 }
 
-/* Flex */
-.flex_main {display: flex;display:-webkit-flex;}
-.flex_row{flex-direction:row;-webkit-flex-direction:row;-ms-flex-direction:row;}
-.flex_row-revers{flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;}
-.flex_column{flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;}
-.flex_column-revers{flex-direction:column-reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;}
-.flex_wrap{flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;}
-.flex_nowrap{flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;}
-.flex_jcontent-start{justify-content:flex-start;-webkit-justify-content:flex-start;-ms-justify-content:flex-start;}
-.flex_jcontent-end{justify-content:flex-end;-webkit-justify-content:flex-end;-ms-justify-content:flex-end;}
-.flex_jcontent-center{justify-content:center;-webkit-justify-content:center;-ms-justify-content:center;}
-.flex_jcontent-between{justify-content:space-between;-webkit-justify-content:space-between;-ms-justify-content:space-between;}
-.flex_jcontent-around{justify-content:space-around;-webkit-justify-content:space-around;-ms-justify-content:space-around;}
-.flex_aitem-start{align-items:flex-start;-webkit-align-items:flex-start;-ms-align-items:flex-start;}
-.flex_aitem-end{align-items:flex-end;-webkit-align-items:flex-end;-ms-align-items:flex-end;}
-.flex_aitem-center{align-items:center;-webkit-align-items:center;-ms-align-items:center;}
-.flex_aitem-stretch{align-items:stretch;-webkit-align-items:stretch;-ms-align-items:stretch;}
-.flex_aitem-baseline{align-items:baseline;-webkit-align-items:baseline;-ms-align-items:baseline;}
-.flex_acontent-start{align-content:flex-start;-webkit-align-content:flex-start;-ms-align-content:flex-start;}
-.flex_acontent-end{align-content:flex-end;-webkit-align-content:flex-end;-ms-align-content:flex-end;}
-.flex_acontent-center{align-content:center;-webkit-align-content:center;-ms-align-content:center;}
-.flex_acontent-stretch{align-content:stretch;-webkit-align-content:stretch;-ms-align-content:stretch;}
-.flex_acontent-between{align-content:space-between;-webkit-align-content:space-between;-ms-align-content:space-between;}
-.flex_acontent-around{align-content:space-around;-webkit-align-content:space-around;-ms-align-content:space-around;}
+/* О нас */
+
+.a_about h4{
+    text-align: left;
+}
+
+.a_wrap img {
+    width: 370px;
+    margin: 10px 20px;
+    border-radius: 30px 0 30px 0;
+}
+
+.a_decrip {
+    width: 50%;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+/* Оплата и доставка */
+.a_conditions h2 {
+    margin-bottom: 30px;
+}
+
+.a_conditions .fa-li {
+    font-size: 25px;
+    color: #97D700;
+}
+
+.a_conditions li {
+    padding-bottom: 30px;
+}
+.a_payment, .a_delivery {
+    width: 35%;
+    min-width: 400px;
+    padding: 0 40px
+}
+
+/* О велосипедах */
+
+.a_about_bikes h4{
+    text-align: left;
+}
+
