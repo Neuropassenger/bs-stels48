@@ -140,8 +140,8 @@ button {
     border-radius: 30px 0 30px 0;
 }
 
-.a_decrip {
-    width: 50%;
+.a_descrip {
+    width: 61%;
     padding: 10px 20px;
     text-align: justify;
 }
@@ -149,6 +149,10 @@ button {
 /* Оплата и доставка */
 .a_conditions {
     padding-bottom: 110px;
+}
+
+.a_conditions li {
+    line-height: 26px;
 }
 
 .a_conditions h2 {
@@ -173,6 +177,10 @@ button {
 
 .a_about_bikes {
     padding-bottom: 110px;
+}
+
+.a_about_bikes li {
+    line-height: 26px;
 }
 
 .a_about_bikes h4 {
@@ -236,11 +244,8 @@ button {
     display: none;
 }
 
-.a_comments button span {
+.a_comments button img {
     padding: 0 50px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #97D700;
 }
 
 /* Контакты */
