@@ -12,6 +12,10 @@ h2 {
     margin-bottom: 60px;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     line-height: 26px;
 }
@@ -114,7 +118,6 @@ button {
 
 .a_about .a_wrap a {
     color: #97D700;
-    text-decoration: none;
 }
 
 .a_wrap img {
@@ -216,6 +219,11 @@ button {
 }
 
 /* Контакты */
+
+.a_contacts {
+    padding-bottom: 150px;
+}
+
 .a_contacts_info p {
     padding-bottom: 20px;
 }
@@ -227,4 +235,62 @@ button {
 #map {
     width: 500px;
     height: 400px;
+}
+
+/* Подвал */
+
+footer {
+    background-color: #97D700;
+    color: #fff;
+    padding: 50px 115px;
+}
+
+footer form {
+    margin: 0 30px 25px 0;
+    width: 300px;
+}
+
+footer input:nth-child(1), footer input:nth-child(2), footer select {
+    font-size: 14px;
+    padding-left: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+    background-color: #97D700;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline:none;
+}
+footer ::-webkit-input-placeholder {color:#fff;}
+footer ::-moz-placeholder          {color:#fff;}
+footer :-moz-placeholder           {color:#fff;}
+footer :-ms-input-placeholder      {color:#fff;}
+
+footer select {
+    padding-left: 0;
+}
+
+footer form button {
+    width: 240px;
+    height: 35px;
+    color: #97D700;
+    background-color: #fff;
+    margin: 15px auto;
+}
+
+footer a {
+    color: #fff;
+    line-height: 25px;
+}
+
+.a_footer_menu {
+    margin: 0 30px 25px 0;
+}
+
+.a_footer_info {
+    width: 350px;
+    margin: 0 30px 25px 0;
+}
+
+.a_footer_info p:first-child {
+    margin-top: 0;
 }
