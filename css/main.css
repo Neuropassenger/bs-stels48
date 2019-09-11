@@ -74,6 +74,11 @@ button {
     margin: 0 auto;
 }
 /* First Section */
+
+.a_first_section {
+    padding-bottom: 60px;
+}
+
 .a_first_section > div > p {
     margin-top: 5px;
     margin-bottom: 70px;
