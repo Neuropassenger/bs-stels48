@@ -1,8 +1,28 @@
 $(document).ready(function(){
+    $("#a_main_slider").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplaySpeed: 1500,
+        navSpeed: 1500,
+        dotsSpeed: 1500,
+        autoplayTimeout: 5000,
+        navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
+    });
+
     $("#a_comments").owlCarousel({
         items: 1,
         loop: true,
         nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplaySpeed: 1500,
+        navSpeed: 1500,
+        dotsSpeed: 1500,
+        autoplayTimeout: 8000,
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
 
@@ -19,7 +39,6 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
-
 });
 
 ymaps.ready(init);

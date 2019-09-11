@@ -5,6 +5,11 @@ body {
     font-size: 14px;
 }
 
+h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
 h2 {
     font-size: 30px;
     font-weight: bold;
@@ -68,6 +73,101 @@ button {
     text-align: center;
     margin: 0 auto;
 }
+/* First Section */
+.a_first_section > div > p {
+    margin-top: 5px;
+    margin-bottom: 70px;
+    font-size: 16px;
+}
+.a_first_section form {
+    margin: 0 30px 25px 0;
+    width: 345px;
+    height: 190px;
+    padding: 30px 44px;
+    background-color: #97D700;
+    border-radius: 7px;
+}
+
+.a_first_section input:nth-child(1), .a_first_section input:nth-child(2), .a_first_section select {
+    font-size: 14px;
+    padding-left: 5px;
+    color: #fff !important;
+    margin-bottom: 25px;
+    background-color: #97D700 !important;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline:none;
+}
+.a_first_section ::-webkit-input-placeholder {color:#fff;}
+.a_first_section ::-moz-placeholder          {color:#fff;}
+.a_first_section :-moz-placeholder           {color:#fff;}
+.a_first_section :-ms-input-placeholder      {color:#fff;}
+
+.a_first_section select {
+    padding-left: 0;
+}
+
+.a_first_section button {
+    width: 240px;
+    height: 35px;
+    color: #97D700;
+    background-color: #fff;
+    margin: 15px auto 0;
+}
+
+#a_main_slider {
+    width: 540px;
+}
+
+.a_slide p {
+    margin-bottom: 46px;
+}
+
+.a_first_section .owl-prev {
+    position: absolute;
+    left: -70px;
+    top: -200px;
+    bottom: 0;
+    width: 25%;
+    height: 200px;
+    margin: auto 0;
+    text-align: right;
+}
+
+.a_first_section .owl-next {
+    position: absolute;
+    right: -70px;
+    top: -200px;
+    bottom: 0;
+    width: 25%;
+    height: 200px;
+    margin: auto 0;
+    text-align: left
+}
+
+.a_first_section button img {
+    padding: 0 50px;
+}
+
+.owl-dots {
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.a_first_section .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #97D700 !important;
+    margin: 5px;
+    border-radius: 0;
+    opacity: 0.27;
+}
+
+.a_first_section .owl-dot.active {
+    opacity: 1;
+}
+
 /* Каталог */
 .a_position {
     padding: 0 22px 20px 22px;
@@ -208,7 +308,7 @@ button {
     text-align: center;
 }
 
-.owl-item img {
+.a_comments .owl-item img {
     width: 115px !important;
 }
 
@@ -240,10 +340,6 @@ button {
     text-align: left
 }
 
-.a_comments .owl-dots {
-    display: none;
-}
-
 .a_comments button img {
     padding: 0 50px;
 }
@@ -267,7 +363,7 @@ button {
     height: 400px;
 }
 
-/* Подвал */
+/* Подвал*/
 
 footer {
     background-color: #97D700;
@@ -283,9 +379,9 @@ footer form {
 footer input:nth-child(1), footer input:nth-child(2), footer select {
     font-size: 14px;
     padding-left: 5px;
-    color: #fff;
+    color: #fff !important;
     margin-bottom: 20px;
-    background-color: #97D700;
+    background-color: #97D700 !important;
     border: none;
     border-bottom: 1px solid #fff;
     outline:none;

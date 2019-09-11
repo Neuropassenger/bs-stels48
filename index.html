@@ -46,15 +46,50 @@
     </div>
 </header>
 <main>
-    <section>
-        <div class="form-action">
+    <section class="a_first_section flex_main flex_wrap flex_jcontent-around" id="a_first_section">
+        <div>
             <h1>Велосипеды STELS</h1>
-            <p> По самым вигодним ценам на рынке </p>
-            <form class="act" action="sender.php" method="post">
-                <input type="text" placeholder="Имя" >
-                <input type="tel" placeholder="Телефон">
-                <input type="text" placeholder="Модель">
-                <button type="submit" class="cta">ЗАКАЗАТЬ</button>
+            <p>По самым выгодным ценам на рынке</p>
+            <form action="" class="flex_main flex_column">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" placeholder="Телефон" required>
+                <select>
+                    <option value="" disabled selected style="display:none;">Модель</option>
+                    <option>Navigator 630 MD</option>
+                    <option>Navigator 300 Gent</option>
+                    <option>Miss 5000 MD</option>
+                    <option>Focus MD</option>
+                    <option>Pilot 950 MD</option>
+                    <option>Navigator 500 V</option>
+                </select>
+                <button type="submit">заказать</button>
+            </form>
+        </div>
+        <div class="owl-carousel" id="a_main_slider">
+            <div class="a_slide">
+                <p>STELS Navigator 630 MD</p>
+                <img src="img/navigator630@2x.png" alt="stels navigator 630">
+            </div>
+            <div class="a_slide">
+                <p>STELS Navigator 300 Gent</p>
+                <img src="img/navigator300gent@2x.png" alt="stels navigator 300">
+            </div>
+            <div class="a_slide">
+                <p>STELS Miss 5000 MD</p>
+                <img src="img/miss5000md@2x.png" alt="stels miss 5000">
+            </div>
+            <div class="a_slide">
+                <p>STELS Focus MD</p>
+                <img src="img/focusmd@2x.png" alt="stels focus MD">
+            </div>
+            <div class="a_slide">
+                <p>STELS Pilot 950 MD</p>
+                <img src="img/pilot950md@2x.png" alt="stels pilot 950">
+            </div>
+            <div class="a_slide">
+                <p>STELS Navigator 500 V</p>
+                <img src="img/navigator500v@2x.png" alt="stels navigator 500">
+            </div>
         </div>
     </section>
 
@@ -326,7 +361,7 @@
             </div>
         </div>
         <div class="center a_order_wrap">
-            <a href="#form" class="a_order">заказать</a>
+            <a href="#a_first_section" class="a_order">заказать</a>
         </div>
     </section>
 
@@ -362,7 +397,7 @@
             </div>
         </div>
         <div class="center a_order_wrap">
-            <a href="#form" class="a_order">заказать</a>
+            <a href="#a_first_section" class="a_order">заказать</a>
         </div>
     </section>
 
@@ -390,7 +425,7 @@
             </div>
         </div>
         <div class="center a_order_wrap">
-            <a href="#form" class="a_order">заказать</a>
+            <a href="#a_first_section" class="a_order">заказать</a>
         </div>
     </section>
 
@@ -410,22 +445,21 @@
     </section>
 </main>
 <footer class="flex_main flex_wrap flex_jcontent-around">
-    <div class="flex_main flex_column" id="form">
-        <form action="">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="text" name="phone" placeholder="Телефон" required>
-            <select>
-                <option value="" disabled selected style="display:none;">Модель</option>
-                <option>Navigator 630 MD</option>
-                <option>Navigator 300 Gent</option>
-                <option>Miss 5000 MD</option>
-                <option>Focus MD</option>
-                <option>Pilot 950 MD</option>
-                <option>Navigator 500 V</option>
-            </select>
-            <button type="submit">заказать</button>
-        </form>
-    </div>
+    <form action="" class="flex_main flex_column" id="form">
+
+        <input type="text" name="name" placeholder="Имя">
+        <input type="text" name="phone" placeholder="Телефон" required>
+        <select>
+            <option value="" disabled selected style="display:none;">Модель</option>
+            <option>Navigator 630 MD</option>
+            <option>Navigator 300 Gent</option>
+            <option>Miss 5000 MD</option>
+            <option>Focus MD</option>
+            <option>Pilot 950 MD</option>
+            <option>Navigator 500 V</option>
+        </select>
+        <button type="submit">заказать</button>
+    </form>
     <div class="a_footer_menu flex_main flex_column">
         <a href="#catalog">Каталог</a>
         <a href="#about_us">О нас</a>
