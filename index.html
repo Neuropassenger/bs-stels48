@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="libs/flex_css/flex.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">-->
-
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -44,7 +42,7 @@
         Первый экран
     </section>
 
-    <section class="a_catalog">
+    <section class="a_catalog" id="catalog">
         <div>
             <h2>Каталог</h2>
         </div>
@@ -82,11 +80,7 @@
                         <td>19 000</td>
                     </tr>
                 </table>
-                <button class="a_catalog_button" data-fancybox data-src="#hidden-navigator-630" href="javascript:;" >заказать</button>
-                <div style="display: none;" id="hidden-navigator-630">
-                    <h2>Здесь!</h2>
-                    <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
-                </div>
+                <button class="a_catalog_button" id="navigator_630">заказать</button>
             </div>
             <div class="a_position">
                 <h4>STELS Navigator 300 Gent</h4>
@@ -121,11 +115,7 @@
                         <td>6 500</td>
                     </tr>
                 </table>
-                <button class="a_catalog_button" data-fancybox data-src="#hidden-navigator-300" href="javascript:;" >заказать</button>
-                <div style="display: none;" id="hidden-navigator-300">
-                    <h2>Здесь!</h2>
-                    <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
-                </div>
+                <button class="a_catalog_button" id="navigator_300">заказать</button>
             </div>
             <div class="a_position">
                 <h4>STELS Miss 5000 MD</h4>
@@ -160,11 +150,7 @@
                         <td>13 720</td>
                     </tr>
                 </table>
-                <button class="a_catalog_button" data-fancybox data-src="#hidden-miss-5000" href="javascript:;" >заказать</button>
-                <div style="display: none;" id="hidden-miss-5000">
-                    <h2>Здесь!</h2>
-                    <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
-                </div>
+                <button class="a_catalog_button" id="miss_5000">заказать</button>
             </div>
             <div class="a_position">
                 <h4>STELS Focus MD</h4>
@@ -199,11 +185,7 @@
                         <td>14 600</td>
                     </tr>
                 </table>
-                <button class="a_catalog_button" data-fancybox data-src="#hidden-focus" href="javascript:;" >заказать</button>
-                <div style="display: none;" id="hidden-focus">
-                    <h2>Здесь!</h2>
-                    <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
-                </div>
+                <button class="a_catalog_button" id="focus_md">заказать</button>
             </div>
             <div class="a_position">
                 <h4>STELS Pilot 950 MD</h4>
@@ -238,11 +220,7 @@
                         <td>17 350</td>
                     </tr>
                 </table>
-                <button class="a_catalog_button" data-fancybox data-src="#hidden-pilot-950" href="javascript:;" >заказать</button>
-                <div style="display: none;" id="hidden-pilot-950">
-                    <h2>Здесь!</h2>
-                    <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
-                </div>
+                <button class="a_catalog_button" id="pilot_950">заказать</button>
             </div>
             <div class="a_position">
                 <h4>STELS Navigator 500 V</h4>
@@ -277,16 +255,12 @@
                         <td>12 300</td>
                     </tr>
                 </table>
-                <button class="a_catalog_button" data-fancybox data-src="#hidden-navigator-500" href="javascript:;" >заказать</button>
-                <div style="display: none;" id="hidden-navigator-500">
-                    <h2>Здесь!</h2>
-                    <p>Будет форма)<br>пока сдеал для каждой модели отдельный скрытый div с индивидуальным id</p>
-                </div>
+                <button class="a_catalog_button" id="navigator_500">заказать</button>
             </div>
         </div>
     </section>
 
-    <section class="a_about">
+    <section class="a_about" id="about_us">
         <div>
             <h2>О нас</h2>
         </div>
@@ -316,7 +290,7 @@
         </div>
     </section>
 
-    <section class="a_conditions">
+    <section class="a_conditions" id="conditions">
         <div  class="flex_main flex_wrap flex_jcontent-around">
             <div class="a_payment">
                 <h2>Оплата</h2>
@@ -335,12 +309,12 @@
                 </ul>
             </div>
         </div>
-        <div class="center">
-            <button data-fancybox data-src="#hidden-general-order" href="javascript:;">заказать</button>
+        <div class="center a_order_wrap">
+                <a href="#form" class="a_order">заказать</a>
         </div>
     </section>
 
-    <section class="a_about_bikes">
+    <section class="a_about_bikes" id="about_bikes">
     <div>
         <h2>О велосипедах STELS</h2>
         </div>
@@ -371,12 +345,12 @@
                 <p>Велосипеды STELS создаются с применением современных технологий: <b>картриджные каретки</b> (устойчивость к попаданию грязи, не требуется обслуживание), <b>дисковые тормоза</b> (надежное торможение даже при повреждении обода, меньшая чувствительность к дождю и грязи), <b>гидроформинг</b> (придание раме необходимой формы без потери прочности), <b>конический рулевой стакан</b> (меньшая нагрузка на шток вилки и подшипники рулевой колонки, устойчивость и стабильность в поворотах), <b>блокировка вилки</b> (гибкость в выборе вида трассы), <b>планетарная втулка</b> (надежное переключение передач, защита от внешней среды).</p>
             </div>
         </div>
-        <div class="center">
-            <button data-fancybox data-src="#hidden-general-order" href="javascript:;">заказать</button>
+        <div class="center a_order_wrap">
+            <a href="#form" class="a_order">заказать</a>
         </div>
     </section>
 
-    <section class="a_comments">
+    <section class="a_comments" id="comments">
         <h2>Отзывы</h2>
         <div class="owl-carousel" id="a_comments">
             <div class="a_one_comment">
@@ -399,12 +373,12 @@
                 </div>
             </div>
         </div>
-        <div class="center">
-            <button data-fancybox data-src="#hidden-general-order" href="javascript:;">заказать</button>
+        <div class="center a_order_wrap">
+            <a href="#form" class="a_order">заказать</a>
         </div>
     </section>
 
-    <section class="a_contacts">
+    <section class="a_contacts" id="contacts">
         <h2>Контакты</h2>
         <div class="flex_main flex_wrap flex_jcontent-around">
             <div id="map"></div>
@@ -420,7 +394,7 @@
     </section>
 </main>
 <footer class="flex_main flex_wrap flex_jcontent-around">
-    <form action="" class="flex_main flex_column">
+    <form action="" class="flex_main flex_column" id="form">
         <input type="text" name="name" placeholder="Имя">
         <input type="text" name="phone" placeholder="Телефон" required>
         <select>
@@ -435,13 +409,13 @@
         <button type="submit">заказать</button>
     </form>
     <div class="a_footer_menu flex_main flex_column">
-        <a href="">Каталог</a>
-        <a href="">О нас</a>
-        <a href="">Доставка и оплата</a>
-        <a href="">О велосипедах</a>
-        <a href="">Контакты</a>
-        <a href="">Отзывы</a>
-        <a href="">Обратный звонок</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about_us">О нас</a>
+        <a href="#conditions">Доставка и оплата</a>
+        <a href="#about_bikes">О велосипедах</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#comments">Отзывы</a>
+        <a href="#">Обратный звонок</a>
     </div>
     <div class="a_footer_info flex_main flex_column flex_jcontent-between">
         <p>STELS48 - Магазин велосипедов STELS<br>Россия, Липецкая область, Елец, Пушкина, 144<br>8 920 506 69 69</p>
@@ -449,9 +423,9 @@
     </div>
 </footer>
 
-<div style="display: none;" id="hidden-general-order">
+<div style="display: none;" id="hidden-back-call">
     <h2>Здесь!</h2>
-    <p>Будет форма для заказа из общих кнопок "заказать"</p>
+    <p>Будет форма для обратного звонка</p>
 </div>
 
 </body>
