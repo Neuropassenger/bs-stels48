@@ -490,5 +490,11 @@ footer a {
 .o_header .fa-phone {
     float: right;
     margin-top: -30px;
-    margin-right: 80px;
+    margin-right: 42px;
+    color: #97D700;
+}
+
+.number {
+    font-family: Montserrat;
+    margin-left: 10px;
 }
