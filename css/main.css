@@ -425,3 +425,70 @@ footer a {
 .a_footer_info p:first-child {
     margin-top: 0;
 }
+
+
+
+/* Шапка сайта */
+
+.o_header .logo {
+    background: #97D700;
+    display: inline-block;
+    top: 0px;
+    left: -7px;
+    width: 223px;
+    height: 68px;
+    background: #97D700 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 7px 0px;
+    opacity: 1;
+}
+
+.o_header .logo-text {
+    text-align: center;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 24px;
+    margin-left: 61.46px;
+    margin-top: 21.87px;
+    margin-right: 66.54px;
+    margin-bottom: 21.87px;
+}
+
+.o_header ul  {
+    margin-top: -40px;
+    margin-left: 220px;
+}
+
+.o_header li {
+    color: black;
+    display: inline;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.o_header a {
+    padding: 14px;
+    text-decoration: none;
+}
+.o_header a:hover {
+    background: green;
+    color: green;
+}
+.o_header a:link {
+    color: black;
+}
+
+.o_header a:hover {
+    background: white;
+    color: #B5E61D;
+}
+
+.o_header .fa-phone {
+    float: right;
+    margin-top: -30px;
+    margin-right: 80px;
+}
