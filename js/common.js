@@ -46,23 +46,21 @@ ymaps.ready(init);
 function init() {  
     var myMap = new ymaps.Map("map", {
         center: [52.621670, 38.504245],
-        zoom: 16,
+        zoom: 15,
         controls: []
     }, {
         searchControlProvider: 'yandex#search'
     }),
     
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Качественные велосипеды по самым низким ценам в СНГ',
-        balloonContent: 'Россия, Липецкая обл., г. Елец, ул. Пушкина, д. 144'
+        iconCaption: 'Наш магазин',
+        hintContent: 'STELS48 - это качественные велосипеды<br>по самым низким ценам в СНГ',
+        balloonContent: 'Россия, Липецкая обл.,<br>г. Елец, ул. Пушкина, д. 144'
     }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/adress.png',
-        iconImageSize: [80, 20],
-        iconImageOffset: [-5, -20]
+        preset: 'islands#icon',
+        iconColor: '#97D700'
     });
 
     myMap.geoObjects
         .add(myPlacemark)
-        .add(myPlacemarkWithContent);
 };
