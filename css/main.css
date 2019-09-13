@@ -76,7 +76,7 @@ button {
 /* First Section */
 
 .a_first_section {
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 
 .a_first_section > div > p {
@@ -156,6 +156,8 @@ button {
 
 .owl-dots {
     position: absolute;
+    background-color: #fff;
+    z-index: 1;
     right: 0;
     top: 18px;
 }
@@ -236,6 +238,10 @@ button {
 
 .a_about .a_wrap a {
     color: #97D700;
+}
+
+.a_wrap > h4 {
+    display: none;
 }
 
 .a_wrap img {
@@ -491,4 +497,299 @@ footer a {
     float: right;
     margin-top: -30px;
     margin-right: 80px;
+}
+
+/* Адаптив */
+@media (max-width: 1199px) {
+    #a_main_slider {
+        width: 450px;
+    }
+
+    .a_first_section form {
+        width: 270px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    .a_wrap img {
+        width: 40%;
+        height: auto;
+    }
+
+    .a_descrip {
+        width: 50%;
+    }
+
+    footer .a_footer_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .a_first_section > div > p {
+        margin-bottom: 40px;
+    }
+
+    .a_first_section > div:first-child {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    #a_first_section form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .a_first_section > div, #a_main_slider {
+        width: 100%;
+    }
+
+    section.a_catalog {
+        width: 100%;
+    }
+
+    .a_wrap img {
+        width: 93%;
+        height: auto;
+    }
+
+    .a_descrip {
+        width: 100%;
+    }
+
+    .a_payment, .a_delivery {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .a_one_comment {
+        width: 100%;
+    }
+
+    .a_comments .owl-next {
+        right: -20%;
+    }
+
+    .a_comments .owl-prev {
+        left: -20%;
+    }
+
+    #map {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    footer form {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .a_footer_info {
+        margin: 0 auto;
+    }
+
+    footer {
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+
+    .a_contacts {
+        padding-bottom: 60px;
+    }
+
+    .a_wrap > h4 {
+        width: 100%;
+        display: block;
+        padding-left: 20px;  
+    }
+
+    .a_descrip h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) { 
+    footer form {
+        width: 350px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+/*=====================Стиль Олега(убрал чтобы не мешало)========================*/
+    nav.menu {
+        display: none;
+    }
+/*===============================================================================*/
+    body {
+        font-size: 12px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .a_first_section form button {
+        position: absolute;
+        width: 280px;
+        height: 40px;
+        left: 50%;
+        margin-left: -140px;
+        top: 355px;
+    }
+
+    .a_first_section {
+        padding: 35px 0 20px;
+    }
+
+    .a_first_section > div > p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .a_first_section > div:first-child {
+        padding-bottom: 0;
+    }
+
+    #a_main_slider {
+        display: none;
+    }
+
+    #a_first_section form {
+        width: 70%;
+        border-radius: 0;
+        padding: 25px 15%;
+    }
+
+    .a_first_section input:nth-child(1), .a_first_section input:nth-child(2), .a_first_section select {
+        font-size: 13px;
+    }
+
+    .a_position {
+        width: 85%;
+        padding: 0 17px 20px 17px;
+        margin: 0 0 40px 0;
+    }
+
+    .a_about {
+        width: 94%;
+    }
+
+    .a_wrap img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .a_wrap {
+        padding-bottom: 10px;
+    }
+
+    .a_wrap > h4 {
+        padding-left: 0;  
+    }
+
+    .a_descrip {
+        padding: 10px 0 25px;
+    }
+
+    .a_descrip p {
+        margin: 5px 0;
+    }
+
+    .a_goods {
+        margin-bottom: 15px;
+    }
+
+    .a_conditions {
+        padding-bottom: 50px;
+    }
+
+    .a_conditions h2 {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .a_conditions li {
+        padding-bottom: 20px;
+    }
+
+    .a_conditions li:last-child {
+        padding-bottom: 0;
+    }
+
+    .a_delivery {
+        margin-bottom: 25px;
+    }
+
+    .a_payment {
+        margin-top: 0;
+    }
+    .a_payment, .a_delivery {
+        min-width: 0;
+    }
+
+    .a_about_bikes {
+        width: 94%;
+        padding-bottom: 50px;
+    }
+
+    .a_descrip ul {
+        padding-left: 20px;
+    }
+
+    .a_comments {
+        width: 94%;
+        padding-bottom: 50px;
+    }
+
+    .a_comments .owl-next {
+        top: -70%;
+        right: -5px;
+    }
+
+    .a_comments .owl-prev {
+        top: -70%;
+        left: -5px;
+    }
+
+    .a_comments button img {
+        padding: 0 25px;
+    }
+
+    .a_contacts_info {
+        width: 94%;
+    }
+
+    .a_contacts {
+        padding-bottom: 20px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer form {
+        margin-bottom: 25px;
+    }
+
 }
