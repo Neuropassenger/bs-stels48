@@ -448,15 +448,12 @@ footer a {
 
 .o_header .logo-text {
     text-align: center;
-    letter-spacing: 0;
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
     font-size: 24px;
-    margin-left: 61.46px;
-    margin-top: 21.87px;
-    margin-right: 66.54px;
-    margin-bottom: 21.87px;
+    letter-spacing: 5px;
+    margin-top: 20px;
 }
 
 .o_header ul  {
