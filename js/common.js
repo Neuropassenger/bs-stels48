@@ -1,4 +1,5 @@
 $(document).ready(function(){
+//карусель для главного слайдера
     $('#a_main_slider').owlCarousel({
         items: 1,
         loop: true,
@@ -11,7 +12,7 @@ $(document).ready(function(){
         autoplayTimeout: 5000,
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
-
+//карусель для отзывов
     $('#a_comments').owlCarousel({
         items: 1,
         loop: true,
@@ -25,21 +26,21 @@ $(document).ready(function(){
         autoplayTimeout: 8000,
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
-
+//плавная прокрутка для верхнего и нижнего меню
     $('.smooth-scroll').on('click', 'a:not(:last)', function (event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
-
+//плавная прокрутка для "заказать", которые разбросаны по сайту
     $('.a_order_wrap').on('click', 'a', function(event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
-
+//автозаполнение формы и выбор элемента в карусели
     $('.a_position').on('click', 'button', function() {
         let id = $(this).parent().attr('data-model-id'),
             top = $('.a_first_section').offset().top,
@@ -50,7 +51,7 @@ $(document).ready(function(){
         owl.trigger('to.owl.carousel', [id - 1, 1500]);
         owl.trigger('refresh.owl.carousel');
     });
-
+//установка padding для многострочных заголовков
     $('.a_wrap').css('padding-top', function() {
         let h4 = $(this).children('.a_descrip').children('h4');
         if (h4.height() > 16) {
