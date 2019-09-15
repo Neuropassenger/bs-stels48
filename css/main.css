@@ -67,6 +67,7 @@ button {
 
 .a_wrap {
     padding-bottom: 50px;
+    position: relative;
 }
 
 .center {
@@ -236,10 +237,6 @@ button {
 
 .a_about .a_wrap a {
     color: #97D700;
-}
-
-.a_wrap > h4 {
-    display: none;
 }
 
 .a_wrap img {
