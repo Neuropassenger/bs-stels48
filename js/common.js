@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#a_main_slider").owlCarousel({
+    $('#a_main_slider').owlCarousel({
         items: 1,
         loop: true,
         nav: true,
@@ -12,7 +12,7 @@ $(document).ready(function(){
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
 
-    $("#a_comments").owlCarousel({
+    $('#a_comments').owlCarousel({
         items: 1,
         loop: true,
         nav: true,
@@ -26,18 +26,37 @@ $(document).ready(function(){
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
 
-    $(".smooth-scroll li").on("click","a", function (event) {
+    $('.smooth-scroll').on('click', 'a', function (event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        let id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
-    $(".a_order_wrap").on("click","a", function (event) {
+    $('.a_order_wrap').on('click', 'a', function(event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        let id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
+    });
+
+    $('.a_position').on('click', 'button', function() {
+        let id = $(this).parent().attr('data-model-id'),
+            top = $('.a_first_section').offset().top,
+            owl = $("#a_main_slider").owlCarousel();
+        $('body,html').animate({scrollTop: top}, 1000);
+        $(`#main_form select option[value="${id}"]`).prop('selected', true);
+        owl.data('owl.carousel').options.autoplay = false;
+        owl.trigger('to.owl.carousel', [id - 1, 1500]);
+        owl.trigger('refresh.owl.carousel');
+    });
+
+    $('.a_wrap').css('padding-top', function() {
+        let h4 = $(this).children('.a_descrip').children('h4');
+        if (h4.height() > 16) {
+            return 18;
+        }
+        return 0;
     });
 });
 

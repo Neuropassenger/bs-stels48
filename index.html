@@ -42,11 +42,9 @@
         </ul>
     </nav>
     <div>
-        <a data-fancybox data-src="#hidden_call_back" href="javascript:;">
-            <i class="fas fa-phone">
-                <span class="number" id="o_menu">8 920 506 69 69</span>
-            </i>
-        </a>
+        <i class="fas fa-phone">
+            <span class="number" id="o_menu">8 920 506 69 69</span>
+        </i>
     </div>
 </header>
 <main>
@@ -54,17 +52,17 @@
         <div>
             <h1>Велосипеды STELS</h1>
             <p>По самым выгодным ценам на рынке</p>
-            <form action="" class="flex_main flex_column">
+            <form action="" class="flex_main flex_column" id="main_form">
                 <input type="text" name="name" placeholder="Имя">
                 <input type="text" name="phone" placeholder="Телефон" required>
                 <select>
                     <option value="" disabled selected style="display:none;">Модель</option>
-                    <option>Navigator 630 MD</option>
-                    <option>Navigator 300 Gent</option>
-                    <option>Miss 5000 MD</option>
-                    <option>Focus MD</option>
-                    <option>Pilot 950 MD</option>
-                    <option>Navigator 500 V</option>
+                    <option value="1">Navigator 630 MD</option>
+                    <option value="2">Navigator 300 Gent</option>
+                    <option value="3">Miss 5000 MD</option>
+                    <option value="4">Focus MD</option>
+                    <option value="5">Pilot 950 MD</option>
+                    <option value="6">Navigator 500 V</option>
                 </select>
                 <button type="submit">заказать</button>
             </form>
@@ -102,7 +100,7 @@
             <h2>Каталог</h2>
         </div>
         <div class="a_goods flex_main flex_wrap flex_jcontent-around">
-            <div class="a_position">
+            <div data-model-id="1" class="a_position">
                 <h4>STELS Navigator 630 MD</h4>
                 <img src="img/navigator630.png" alt="stels navigator 630">
                 <table>
@@ -137,7 +135,7 @@
                 </table>
                 <button class="a_catalog_button" id="navigator_630">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="2" class="a_position">
                 <h4>STELS Navigator 300 Gent</h4>
                 <img src="img/navigator300gent@2x.png" alt="stels navigator 300">
                 <table>
@@ -172,7 +170,7 @@
                 </table>
                 <button class="a_catalog_button" id="navigator_300">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="3" class="a_position">
                 <h4>STELS Miss 5000 MD</h4>
                 <img src="img/miss5000md@2x.png" alt="stels miss 5000">
                 <table>
@@ -207,7 +205,7 @@
                 </table>
                 <button class="a_catalog_button" id="miss_5000">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="4" class="a_position">
                 <h4>STELS Focus MD</h4>
                 <img src="img/focusmd@2x.png" alt="stels focus MD">
                 <table>
@@ -242,7 +240,7 @@
                 </table>
                 <button class="a_catalog_button" id="focus_md">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="5" class="a_position">
                 <h4>STELS Pilot 950 MD</h4>
                 <img src="img/pilot950md@2x.png" alt="stels pilot 950">
                 <table>
@@ -277,7 +275,7 @@
                 </table>
                 <button class="a_catalog_button" id="pilot_950">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="6" class="a_position">
                 <h4>STELS Navigator 500 V</h4>
                 <img src="img/navigator500v@2x.png" alt="stels navigator 500">
                 <table>
@@ -322,7 +320,7 @@
         <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
             <img src="img/quality.jpg" alt="качественные велосипеды">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
-                <h4>Качественный товар</h4>
+                <h4>Качественный товарКачественный товарКачественный товар</h4>
                 <p>Наша команда увлечена прогулками на велосипедах, и у нас самих есть модели, представленные на сайте.</p>
                 <p>После продолжительного использования в разных условиях были приятно удивлены качеством велосипедов и на своем опыте убедились, что STELS выпускает надежные велосипеды, достойные наших рекомендаций.</p>
             </div>
