@@ -26,7 +26,7 @@ $(document).ready(function(){
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
 
-    $(".a_footer_menu").on("click","a", function (event) {
+    $(".smooth-scroll li").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;

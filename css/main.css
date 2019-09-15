@@ -420,6 +420,15 @@ footer a {
     margin: 0 30px 25px 0;
 }
 
+.a_footer_menu ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.a_footer_menu li {
+    list-style: none;
+}
+
 .a_footer_info {
     width: 350px;
     margin: 0 30px 25px 0;
