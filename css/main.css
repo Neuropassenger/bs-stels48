@@ -67,6 +67,7 @@ button {
 
 .a_wrap {
     padding-bottom: 50px;
+    position: relative;
 }
 
 .center {
@@ -158,6 +159,8 @@ button {
     position: absolute;
     right: 0;
     top: 18px;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .a_first_section .owl-dot {
@@ -236,10 +239,6 @@ button {
 
 .a_about .a_wrap a {
     color: #97D700;
-}
-
-.a_wrap > h4 {
-    display: none;
 }
 
 .a_wrap img {
