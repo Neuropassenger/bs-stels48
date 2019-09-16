@@ -43,13 +43,15 @@ $(document).ready(function(){
 //автозаполнение формы и выбор элемента в карусели
     $('.a_position').on('click', 'button', function() {
         let id = $(this).parent().attr('data-model-id'),
-            top = $('.a_first_section').offset().top,
-            owl = $("#a_main_slider").owlCarousel();
+            top = $('.a_first_section').offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
         $(`#main_form select option[value="${id}"]`).prop('selected', true);
-        owl.data('owl.carousel').options.autoplay = false;
-        owl.trigger('to.owl.carousel', [id - 1, 1500]);
-        owl.trigger('refresh.owl.carousel');
+        setModelInOwl(id);
+    });
+//отслеживание ручного изменения формы 
+    $("#main_form select").change(function() {
+        let id = $(this).val();
+        setModelInOwl(id);
     });
 //установка padding для многострочных заголовков
     $('.a_wrap').css('padding-top', function() {
@@ -59,6 +61,13 @@ $(document).ready(function(){
         }
         return 0;
     });
+
+    function setModelInOwl(id) {
+        let owl = $("#a_main_slider").owlCarousel();
+        owl.data('owl.carousel').options.autoplay = false;
+        owl.trigger('to.owl.carousel', [id - 1, 1500]);
+        owl.trigger('refresh.owl.carousel');
+    };
 });
 
 ymaps.ready(init);
