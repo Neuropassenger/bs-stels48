@@ -26,20 +26,13 @@ $(document).ready(function(){
         autoplayTimeout: 8000,
         navText: ["<img src='img/arrow_left.png'>", "<img src='img/arrow_right.png'>"]
     });
+    
 //плавная прокрутка для верхнего и нижнего меню
-    $('.smooth-scroll').on('click', 'a:not(:last)', function (event) {
-        event.preventDefault();
-        let id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
+    $('.smooth-scroll').on('click', 'a:not(:last)', smoothScroll);
+
 //плавная прокрутка для "заказать", которые разбросаны по сайту
-    $('.a_order_wrap').on('click', 'a', function(event) {
-        event.preventDefault();
-        let id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
+    $('.a_order_wrap').on('click', 'a', smoothScroll);
+
 //автозаполнение формы и выбор элемента в карусели
     $('.a_position').on('click', 'button', function() {
         let id = $(this).parent().attr('data-model-id'),
@@ -48,11 +41,13 @@ $(document).ready(function(){
         $(`#main_form select option[value="${id}"]`).prop('selected', true);
         setModelInOwl(id);
     });
+
 //отслеживание ручного изменения формы 
     $("#main_form select").change(function() {
         let id = $(this).val();
         setModelInOwl(id);
     });
+
 //установка padding для многострочных заголовков
     $('.a_wrap').css('padding-top', function() {
         let h4 = $(this).children('.a_descrip').children('h4');
@@ -68,6 +63,12 @@ $(document).ready(function(){
         owl.trigger('to.owl.carousel', [id - 1, 1500]);
         owl.trigger('refresh.owl.carousel');
     };
+
+    function smoothScroll() {
+        let id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    }
 });
 
 ymaps.ready(init);
