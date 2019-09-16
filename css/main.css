@@ -499,3 +499,34 @@ footer a {
     font-family: Montserrat;
     margin-left: 10px;
 }
+
+/* mobile style*/
+.icon_burger {
+    display: none;
+    width: 45px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon_burger span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #97D700;
+    border-radius: 9px;
+    left: o;
+    transform: rotate(0deg) ;
+    transition: .25s ease-in-out;
+}
+
+.icon_burger span:nth-child(1){
+    top: 0px;
+}
+.icon_burger span:nth-child(2), .icon_burger span:nth-child(3){
+    top: 13px;
+}
+.icon_burger span:nth-child(4){
+    top: 26px;
+}

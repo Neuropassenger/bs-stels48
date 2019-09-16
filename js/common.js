@@ -64,3 +64,13 @@ function init() {
     myMap.geoObjects
         .add(myPlacemark)
 };
+
+/* скрипт для бургер меню*/
+
+(function ($) {
+    $(function () {
+       $('icon-burger') .on('click', function () {
+           $(this).closest('.menu').toggleClass('menu-open');
+       });
+    });
+})(jQuery);
