@@ -51,7 +51,6 @@ $(document).ready(function(){
 //установка padding для многострочных заголовков
     $('.a_wrap').css('padding-top', function() {
         let h4 = $(this).children('.a_descrip').children('h4');
-        console.log(h4.height());
         if (h4.height() > 30) {
             return 18;
         }
