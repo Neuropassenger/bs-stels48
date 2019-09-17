@@ -74,11 +74,11 @@ button {
     text-align: center;
     margin: 0 auto;
 }
-/* First Section */
 
-.a_first_section {
-    padding: 60px 0;
+section {
+    padding-top: 60px;
 }
+/* First Section */
 
 .a_first_section > div > p {
     margin-top: 5px;
@@ -185,10 +185,6 @@ button {
     margin: 0 30px 55px 30px;
 }
 
-.a_goods {
-    margin-bottom: 70px;
-}
-
 .a_catalog td {
     line-height: 18px;
 }
@@ -232,6 +228,11 @@ button {
 
 /* О нас */
 
+.a_about h2 {
+    margin-top: 0;
+    line-height: 1;
+}
+
 .a_about h4 {
     margin-top: 0;
     text-align: left;
@@ -254,9 +255,13 @@ button {
     text-align: justify;
 }
 
+.a_about .a_wrap:last-child {
+    padding-bottom: 0;
+}
+
 /* Оплата и доставка */
 .a_conditions {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 
 .a_conditions li {
@@ -264,7 +269,7 @@ button {
 }
 
 .a_conditions h2 {
-    margin-bottom: 30px;
+    margin: 5px 0 30px 0;
 }
 
 .a_conditions .fa-li {
@@ -290,7 +295,7 @@ button {
 /* О велосипедах */
 
 .a_about_bikes {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 
 .a_about_bikes li {
@@ -309,7 +314,7 @@ button {
 /* Отзывы */
 
 .a_comments {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 
 .a_comments b {
