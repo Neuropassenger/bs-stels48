@@ -67,17 +67,18 @@ button {
 
 .a_wrap {
     padding-bottom: 50px;
+    position: relative;
 }
 
 .center {
     text-align: center;
     margin: 0 auto;
 }
-/* First Section */
 
-.a_first_section {
-    padding: 60px 0;
+section {
+    padding-top: 60px;
 }
+/* First Section */
 
 .a_first_section > div > p {
     margin-top: 5px;
@@ -158,6 +159,8 @@ button {
     position: absolute;
     right: 0;
     top: 18px;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .a_first_section .owl-dot {
@@ -180,10 +183,6 @@ button {
     border: 1px solid #97D700;
     border-radius: 30px 0 30px 0;
     margin: 0 30px 55px 30px;
-}
-
-.a_goods {
-    margin-bottom: 70px;
 }
 
 .a_catalog td {
@@ -229,6 +228,11 @@ button {
 
 /* О нас */
 
+.a_about h2 {
+    margin-top: 0;
+    line-height: 1;
+}
+
 .a_about h4 {
     margin-top: 0;
     text-align: left;
@@ -236,10 +240,6 @@ button {
 
 .a_about .a_wrap a {
     color: #97D700;
-}
-
-.a_wrap > h4 {
-    display: none;
 }
 
 .a_wrap img {
@@ -255,9 +255,13 @@ button {
     text-align: justify;
 }
 
+.a_about .a_wrap:last-child {
+    padding-bottom: 0;
+}
+
 /* Оплата и доставка */
 .a_conditions {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 
 .a_conditions li {
@@ -265,17 +269,23 @@ button {
 }
 
 .a_conditions h2 {
-    margin-bottom: 30px;
+    margin: 5px 0 30px 0;
 }
 
 .a_conditions .fa-li {
     font-size: 25px;
     color: #97D700;
+    padding-top: 7px;
 }
 
 .a_conditions li {
     padding-bottom: 30px;
 }
+
+.a_delivery li {
+    padding-left: 5px;
+}
+
 .a_payment, .a_delivery {
     width: 35%;
     min-width: 420px;
@@ -285,7 +295,7 @@ button {
 /* О велосипедах */
 
 .a_about_bikes {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 
 .a_about_bikes li {
@@ -304,7 +314,7 @@ button {
 /* Отзывы */
 
 .a_comments {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
 }
 
 .a_comments b {
@@ -419,6 +429,15 @@ footer a {
 
 .a_footer_menu {
     margin: 0 30px 25px 0;
+}
+
+.a_footer_menu ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.a_footer_menu li {
+    list-style: none;
 }
 
 .a_footer_info {

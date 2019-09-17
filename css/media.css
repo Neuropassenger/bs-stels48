@@ -13,11 +13,6 @@
         margin-top: 10px;
     }
 
-    .a_wrap img {
-        width: 40%;
-        height: auto;
-    }
-
     .a_descrip {
         width: 50%;
     }
@@ -62,6 +57,16 @@
 
     .a_descrip {
         width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .a_about > .a_wrap:last-child > .a_descrip,
+    .a_about_bikes  > .a_wrap:nth-last-child(2) > .a_descrip {
+        padding-bottom: 0;
+    }
+
+    .a_about_bikes h2, .a_about h2 {
+        margin-bottom: 100px;
     }
 
     .a_payment, .a_delivery {
@@ -104,14 +109,9 @@
         padding-bottom: 60px;
     }
 
-    .a_wrap > h4 {
-        width: 100%;
-        display: block;
-        padding-left: 20px;
-    }
-
     .a_descrip h4 {
-        display: none;
+        position: absolute;
+        top: -50px;
     }
 }
 
@@ -134,6 +134,8 @@
 
     section {
         width: 100%;
+        padding-top: 25px;
+        padding-bottom: 20px;
     }
 
     h1 {
@@ -143,6 +145,11 @@
     h2 {
         font-size: 20px;
         margin-bottom: 30px;
+    }
+
+    .a_about h2 {
+        margin-top: 10px;
+        line-height: 1.15;
     }
 
     h4 {
@@ -159,7 +166,7 @@
     }
 
     .a_first_section {
-        padding: 35px 0 20px;
+        padding: 35px 0 0;
     }
 
     .a_first_section > div > p {
@@ -181,7 +188,9 @@
         padding: 25px 15%;
     }
 
-    .a_first_section input:nth-child(1), .a_first_section input:nth-child(2), .a_first_section select {
+    .a_first_section input:nth-child(1),
+    .a_first_section input:nth-child(2),
+    .a_first_section select {
         font-size: 13px;
     }
 
@@ -191,8 +200,16 @@
         margin: 0 0 40px 0;
     }
 
+    .a_position:last-child {
+        margin: 0;
+    }
+
     .a_about {
         width: 94%;
+    }
+
+    .a_about_bikes h2, .a_about h2 {
+        margin-bottom: 60px;
     }
 
     .a_wrap img {
@@ -204,24 +221,25 @@
         padding-bottom: 10px;
     }
 
-    .a_wrap > h4 {
-        padding-left: 0;
+    .a_descrip {
+        padding: 10px 0 45px;
     }
 
-    .a_descrip {
-        padding: 10px 0 25px;
-    }
+    /*.a_about > .a_wrap:last-child > .a_descrip,
+    .a_about_bikes  > .a_wrap:nth-last-child(2) > .a_descrip {
+        padding-bottom: 30px;
+    }*/
 
     .a_descrip p {
         margin: 5px 0;
     }
 
-    .a_goods {
-        margin-bottom: 15px;
+    .a_descrip h4 {
+        top: -35px;
     }
 
     .a_conditions {
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 
     .a_conditions h2 {
@@ -250,7 +268,11 @@
 
     .a_about_bikes {
         width: 94%;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
+    }
+
+    .a_about_bikes > .a_wrap:nth-last-child(2) > .a_descrip:last-child {
+        padding-bottom: 10px;
     }
 
     .a_descrip ul {
@@ -259,7 +281,7 @@
 
     .a_comments {
         width: 94%;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 
     .a_comments .owl-next {

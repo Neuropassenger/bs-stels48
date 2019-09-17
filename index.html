@@ -30,7 +30,7 @@
     <div class="logo">
         <p class="logo-text">Stels48</p>
     </div>
-    <nav class="menu">
+    <nav class="menu smooth-scroll">
         <div class="icon_burger">
             <span></span>
             <span></span>
@@ -44,11 +44,13 @@
             <li><a href="#about_bikes" class="menu-item">О Велосипедах</a></li>
             <li><a href="#contacts" class="menu-item">Контакты</a></li>
             <li><a href="#comments" class="menu-item">Отзывы</a></li>
-            <li><a href="#o_menu" class="menu-item">Обратный Звонок</a></li>
+            <li><a data-fancybox data-src="#hidden_call_back" href="javascript:;" class="menu-item">Обратный Звонок</a></li>
         </ul>
     </nav>
     <div>
-        <i class="fas fa-phone"> <span class="number" id="o_menu">8 920 506 69 69</span> </i>
+        <i class="fas fa-phone">
+            <span class="number" id="o_menu">8 920 506 69 69</span>
+        </i>
     </div>
 </header>
 <main>
@@ -56,17 +58,17 @@
         <div>
             <h1>Велосипеды STELS</h1>
             <p>По самым выгодным ценам на рынке</p>
-            <form action="" class="flex_main flex_column">
+            <form action="" class="flex_main flex_column" id="main_form">
                 <input type="text" name="name" placeholder="Имя">
                 <input type="text" name="phone" placeholder="Телефон" required>
                 <select>
                     <option value="" disabled selected style="display:none;">Модель</option>
-                    <option>Navigator 630 MD</option>
-                    <option>Navigator 300 Gent</option>
-                    <option>Miss 5000 MD</option>
-                    <option>Focus MD</option>
-                    <option>Pilot 950 MD</option>
-                    <option>Navigator 500 V</option>
+                    <option value="1">Navigator 630 MD</option>
+                    <option value="2">Navigator 300 Gent</option>
+                    <option value="3">Miss 5000 MD</option>
+                    <option value="4">Focus MD</option>
+                    <option value="5">Pilot 950 MD</option>
+                    <option value="6">Navigator 500 V</option>
                 </select>
                 <button type="submit">заказать</button>
             </form>
@@ -104,7 +106,7 @@
             <h2>Каталог</h2>
         </div>
         <div class="a_goods flex_main flex_wrap flex_jcontent-around">
-            <div class="a_position">
+            <div data-model-id="1" class="a_position">
                 <h4>STELS Navigator 630 MD</h4>
                 <img src="img/navigator630.png" alt="stels navigator 630">
                 <table>
@@ -139,9 +141,9 @@
                 </table>
                 <button class="a_catalog_button" id="navigator_630">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="2" class="a_position">
                 <h4>STELS Navigator 300 Gent</h4>
-                <img src="img/navigator300gent.png" alt="stels navigator 300">
+                <img src="img/navigator300gent@2x.png" alt="stels navigator 300">
                 <table>
                     <tr>
                         <td>Тип рамы</td>
@@ -174,9 +176,9 @@
                 </table>
                 <button class="a_catalog_button" id="navigator_300">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="3" class="a_position">
                 <h4>STELS Miss 5000 MD</h4>
-                <img src="img/miss5000md.png" alt="stels miss 5000">
+                <img src="img/miss5000md@2x.png" alt="stels miss 5000">
                 <table>
                     <tr>
                         <td>Тип рамы</td>
@@ -209,9 +211,9 @@
                 </table>
                 <button class="a_catalog_button" id="miss_5000">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="4" class="a_position">
                 <h4>STELS Focus MD</h4>
-                <img src="img/focusmd.png" alt="stels focus MD">
+                <img src="img/focusmd@2x.png" alt="stels focus MD">
                 <table>
                     <tr>
                         <td>Тип рамы</td>
@@ -244,9 +246,9 @@
                 </table>
                 <button class="a_catalog_button" id="focus_md">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="5" class="a_position">
                 <h4>STELS Pilot 950 MD</h4>
-                <img src="img/pilot950md.png" alt="stels pilot 950">
+                <img src="img/pilot950md@2x.png" alt="stels pilot 950">
                 <table>
                     <tr>
                         <td>Тип рамы</td>
@@ -279,9 +281,9 @@
                 </table>
                 <button class="a_catalog_button" id="pilot_950">заказать</button>
             </div>
-            <div class="a_position">
+            <div data-model-id="6" class="a_position">
                 <h4>STELS Navigator 500 V</h4>
-                <img src="img/navigator500v.png" alt="stels navigator 500">
+                <img src="img/navigator500v@2x.png" alt="stels navigator 500">
                 <table>
                     <tr>
                         <td>Тип рамы</td>
@@ -322,7 +324,6 @@
             <h2>О нас</h2>
         </div>
         <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
-            <h4>Качественный товар</h4>
             <img src="img/quality.jpg" alt="качественные велосипеды">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
                 <h4>Качественный товар</h4>
@@ -331,8 +332,7 @@
             </div>
         </div>
         <div class="a_wrap flex_main flex_wrap flex_row-revers flex_jcontent-around">
-            <h4>Выгодные цены</h4>
-            <img src="img/stels.png" alt="качественные велосипеды">
+            <img src="img/stels@2x.png" alt="качественные велосипеды">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
                 <h4>Выгодные цены</h4>
                 <p>Наши основные направления - это продажа запчастей для <a href="#">иномарок</a> и <a href="#">мотоциклов</a>. У нас нет отдельного склада для велосипедов и мы не держим их в наличии, от чего существенно снижаются издержки.</p>
@@ -340,8 +340,7 @@
             </div>
         </div>
         <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
-            <h4>Активный образ жизни</h4>
-            <img src="img/davai.png" alt="качественные велосипеды">
+            <img src="img/davai@2x.png" alt="качественные велосипеды">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
                 <h4>Активный образ жизни</h4>
                 <p>Будучи истинными любителями велоспорта, мы стремимся приобщить как можно больше людей к активному образу жизни. Велосипед - это самый простой способ начать больше двигаться.</p>
@@ -379,8 +378,7 @@
             <h2>О велосипедах STELS</h2>
         </div>
         <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
-            <h4>Велосипеды STELS производятся в России</h4>
-            <img src="img/zavod1.png" alt="завод велосипедов">
+            <img src="img/zavod1@2x.png" alt="завод велосипедов">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
                 <h4>Велосипеды STELS производятся в России</h4>
                 <p>Компания STELS является обладателем двух заводов на территории России. Это Жуковский и Кубинский велозаводы.</p>
@@ -388,8 +386,7 @@
             </div>
         </div>
         <div class="a_wrap flex_main flex_wrap flex_row-revers flex_jcontent-around">
-            <h4>Велосипеды STELS производятся в России</h4>
-            <img src="img/control.png" alt="гарантия качества велоспедов">
+            <img src="img/control@2x.png" alt="гарантия качества велоспедов">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
                 <h4>Гарантия качества</h4>
                 <p>В процессе производства имеет место обязательный трехэтапный контроль качества:</p>
@@ -401,8 +398,7 @@
             </div>
         </div>
         <div class="a_wrap flex_main flex_wrap flex_jcontent-around">
-            <h4>Велосипеды STELS производятся в России</h4>
-            <img src="img/manufact_2.png" alt="современные технологии производства велосипедов">
+            <img src="img/manufact_2@2x.png" alt="современные технологии производства велосипедов">
             <div class="a_descrip flex_main flex_column flex_jcontent-around">
                 <h4>Современные технологии</h4>
                 <p>Велосипеды STELS создаются с применением современных технологий: <b>картриджные каретки</b> (устойчивость к попаданию грязи, не требуется обслуживание), <b>дисковые тормоза</b> (надежное торможение даже при повреждении обода, меньшая чувствительность к дождю и грязи), <b>гидроформинг</b> (придание раме необходимой формы без потери прочности), <b>конический рулевой стакан</b> (меньшая нагрузка на шток вилки и подшипники рулевой колонки, устойчивость и стабильность в поворотах), <b>блокировка вилки</b> (гибкость в выборе вида трассы), <b>планетарная втулка</b> (надежное переключение передач, защита от внешней среды).</p>
@@ -472,14 +468,16 @@
         </select>
         <button type="submit">заказать</button>
     </form>
-    <div class="a_footer_menu flex_main flex_column">
-        <a href="#catalog">Каталог</a>
-        <a href="#about_us">О нас</a>
-        <a href="#conditions">Доставка и оплата</a>
-        <a href="#about_bikes">О велосипедах</a>
-        <a href="#contacts">Контакты</a>
-        <a href="#comments">Отзывы</a>
-        <a href="#o_menu">Обратный звонок</a>
+    <div class="a_footer_menu flex_main flex_column smooth-scroll">
+        <ul>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#about_us">О нас</a></li>
+            <li><a href="#conditions">Доставка и оплата</a></li>
+            <li><a href="#about_bikes">О велосипедах</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#comments">Отзывы</a></li>
+            <li><a data-fancybox data-src="#hidden_call_back" href="javascript:;">Обратный звонок</a></li>
+        </ul>
     </div>
     <div class="a_footer_info flex_main flex_column flex_jcontent-between">
         <p>STELS48 - Магазин велосипедов STELS<br>Россия, Липецкая область, Елец, Пушкина, 144<br>8 920 506 69 69</p>
@@ -487,7 +485,7 @@
     </div>
 </footer>
 
-<div style="display: none;" id="hidden-back-call">
+<div style="display: none;" id="hidden_call_back">
     <h2>Здесь!</h2>
     <p>Будет форма для обратного звонка</p>
 </div>
