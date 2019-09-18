@@ -68,6 +68,11 @@ $(document).ready(function(){
             closeMobMenu();
         }
     });
+//ослеживание страницы, чтобы изменить положение бургера
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 50) $('.burger').css('right', '0');
+        else $('.burger').css('right', '23px');
+    });
 
     function setModelInOwl(id) {
         let owl = $("#a_main_slider").owlCarousel();
