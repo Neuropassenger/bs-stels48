@@ -290,6 +290,7 @@ header .logo {
 
 #main_form select {
     padding-left: 0;
+    -webkit-appearance: none;
 }
 
 #main_form button {
