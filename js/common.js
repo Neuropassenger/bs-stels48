@@ -39,7 +39,9 @@ $(document).ready(function(){
             top = $('.a_first_section').offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
         $(`#main_form select option[value="${id}"]`).prop('selected', true);
-        setModelInOwl(id);
+        setTimeout(function() {
+            setModelInOwl(id)
+        }, 1000);
     });
 
 //отслеживание ручного изменения формы 
@@ -57,6 +59,16 @@ $(document).ready(function(){
         return 0;
     });
 
+//бургер и моб меню
+    $('.menu_btn').on('click', function(e) {
+        e.preventDefault;
+        if ($('.menu_phone').length) {
+            genMobMenu();
+        } else {
+            closeMobMenu();
+        }
+    });
+
     function setModelInOwl(id) {
         let owl = $("#a_main_slider").owlCarousel();
         owl.data('owl.carousel').options.autoplay = false;
@@ -65,9 +77,32 @@ $(document).ready(function(){
     };
 
     function smoothScroll() {
+        if ($('.mob_main_menu').length) {
+            closeMobMenu();
+        }
         let id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
+    }
+
+    function genMobMenu() {
+        $('.menu_btn').addClass('menu_btn_active');
+        $("body").addClass("fixed");
+        $('header').removeClass().addClass('mob_main_menu flex_main flex_column flex_jcontent-between').append($('#main_form'));
+        $('.menu_phone').removeClass().addClass('mob_menu flex_main flex_column flex_jcontent-between');
+        $('header ul').removeClass();
+        $('.logo, main, footer').css('display', 'none');
+    }
+
+    function closeMobMenu() {
+        $('.menu_btn').removeClass('menu_btn_active');
+        $("body").removeClass();
+        $('header').removeClass().addClass('flex_main flex_jcontent-between');
+        $('.a_first_section > div:first').append($('#main_form'));
+        $('.mob_menu').removeClass().addClass('menu_phone flex_main flex_jcontent-between');
+        $('header ul').addClass('flex_main flex_wrap flex_jcontent-between');
+        $('.logo, main, footer').css('display', 'flex');
+        $('main').css('display', 'block');
     }
 });
 
@@ -94,13 +129,3 @@ function init() {
     myMap.geoObjects
         .add(myPlacemark)
 };
-
-/* скрипт для бургер меню*/
-
-(function ($) {
-    $(function () {
-       $('icon-burger') .on('click', function () {
-           $(this).closest('.menu').toggleClass('menu-open');
-       });
-    });
-})(jQuery);

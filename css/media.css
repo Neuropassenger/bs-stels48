@@ -1,11 +1,25 @@
 /* Медиа-запросы для адаптивности */
 
 @media (max-width: 1199px) {
+    
+    .menu_phone li:last-child {
+        display: none;
+    }
+
+    .menu_phone a {
+        padding: 5px 8px;
+    }
+
+    .menu_phone nav {
+        padding: 0 10px;
+        width: 80%;
+    }
+
     #a_main_slider {
         width: 450px;
     }
 
-    .a_first_section form {
+    #main_form {
         width: 270px;
     }
 
@@ -23,9 +37,18 @@
 }
 
 @media (max-width: 991px) {
+
     section {
         margin: 0 auto;
         width: 70%;
+    }
+
+    header .menu_phone {
+        display: none;
+    }
+
+    .menu_btn {
+        display: block;
     }
 
     .a_first_section > div > p {
@@ -37,7 +60,7 @@
         padding-bottom: 40px;
     }
 
-    #a_first_section form {
+    #main_form {
         width: 80%;
         margin: 0 auto;
     }
@@ -123,11 +146,7 @@
 }
 
 @media (max-width: 575px) {
-    /*=====================Стиль Олега(убрал чтобы не мешало)========================*/
-    /*nav.menu {
-        display: none;
-    }*/
-    /*===============================================================================*/
+    
     body {
         font-size: 12px;
     }
@@ -156,13 +175,13 @@
         font-size: 14px;
     }
 
-    .a_first_section form button {
+    #main_form button {
         position: absolute;
         width: 280px;
         height: 40px;
         left: 50%;
         margin-left: -140px;
-        top: 355px;
+        top: 150px;
     }
 
     .a_first_section {
@@ -182,15 +201,15 @@
         display: none;
     }
 
-    #a_first_section form {
+    #main_form {
         width: 70%;
         border-radius: 0;
         padding: 25px 15%;
     }
 
-    .a_first_section input:nth-child(1),
-    .a_first_section input:nth-child(2),
-    .a_first_section select {
+    #main_form input:nth-child(1),
+    #main_form input:nth-child(2),
+    #main_form select {
         font-size: 13px;
     }
 

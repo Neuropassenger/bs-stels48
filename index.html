@@ -26,31 +26,28 @@
 <body>
 <script src="js/common.js"></script>
 
-<header class="o_header">
-    <div class="logo">
-        <p class="logo-text">Stels48</p>
+<header class="flex_main flex_jcontent-between">
+    <div class="logo flex_main flex_column flex_jcontent-center">
+        <p>stels48</p>
     </div>
-    <nav class="menu smooth-scroll">
-        <div class="icon_burger">
+    <div class="menu_phone flex_main flex_jcontent-between">
+        <nav class="smooth-scroll">
+            <ul class="flex_main flex_wrap flex_jcontent-between">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about_us">О нас</a></li>
+                <li><a href="#conditions">Доставка и Оплата</a></li>
+                <li><a href="#about_bikes">О велосипедах</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#comments">Отзывы</a></li>
+                <li><a data-fancybox data-src="#hidden_call_back" href="javascript:;">Обратный звонок</a></li>
+            </ul>
+        </nav>
+        <span class="phone"><i class="fas fa-phone"></i>8 920 506 69 69</span>
+    </div>
+    <div class="burger flex_main flex_column flex_jcontent-center">
+        <a class="menu_btn" href="#">
             <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul>
-            <li><a href="#catalog" class="menu-item">Каталог</a></li>
-            <li><a href="#about_us" class="menu-item">О Нас</a></li>
-            <li><a href="#conditions" class="menu-item">Доставка и Оплата</a></li>
-            <li><a href="#about_bikes" class="menu-item">О Велосипедах</a></li>
-            <li><a href="#contacts" class="menu-item">Контакты</a></li>
-            <li><a href="#comments" class="menu-item">Отзывы</a></li>
-            <li><a data-fancybox data-src="#hidden_call_back" href="javascript:;" class="menu-item">Обратный Звонок</a></li>
-        </ul>
-    </nav>
-    <div>
-        <i class="fas fa-phone">
-            <span class="number" id="o_menu">8 920 506 69 69</span>
-        </i>
+        </a>
     </div>
 </header>
 <main>
