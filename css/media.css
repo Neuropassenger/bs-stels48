@@ -214,7 +214,7 @@
     #main_form input:nth-child(1),
     #main_form input:nth-child(2),
     #main_form select {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .a_position {
