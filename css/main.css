@@ -296,6 +296,9 @@ header .logo {
 
 #main_form select {
     padding-left: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 #main_form button {
