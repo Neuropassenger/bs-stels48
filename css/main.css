@@ -132,15 +132,20 @@ header .logo {
 
 .burger {
     position: fixed;
+    width: 55px;
+    height: 55px;
     background-color: #fff;
     z-index: 10;
-    right: 33px;
-    top: 15px;
+    right: 23px;
+    top: 7px;
+    transition: 0.5s;
+    border-radius: 15px 0 0 15px;
 }
 
 .menu_btn {
     display: none;
     position: relative;
+    margin: 0 auto;
     width: 35px;
     height: 35px;
 }
@@ -268,6 +273,7 @@ header .logo {
     margin: 0 30px 25px 0;
     width: 345px;
     height: 190px;
+    min-height: 190px;
     padding: 30px 44px;
     background-color: #97D700;
     border-radius: 7px;
