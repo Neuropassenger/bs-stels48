@@ -136,6 +136,10 @@
         position: absolute;
         top: -50px;
     }
+
+    .burger {
+        display: block;
+    }
 }
 
 @media (max-width: 767px) {
@@ -244,11 +248,6 @@
         padding: 10px 0 45px;
     }
 
-    /*.a_about > .a_wrap:last-child > .a_descrip,
-    .a_about_bikes  > .a_wrap:nth-last-child(2) > .a_descrip {
-        padding-bottom: 30px;
-    }*/
-
     .a_descrip p {
         margin: 5px 0;
     }
@@ -331,55 +330,6 @@
 
     footer form {
         margin-bottom: 25px;
-    }
-
-}
-
-/* media for burger mobile menu*/
-
-@media screen and (max-width: 768px){
-    .icon_burger {
-        display: inline-block;
-    }
-    .menu-item {
-        position: fixed;
-        display: block;
-        top: 0;
-        right: 0;
-        left: 0;
-        margin-top: 52px;
-        background-color: rgba(151, 215, 0 , 0.8);
-        z-index: 1000;
-        overflow: auto;
-        opacity: 0;
-    }
-
-    .menu-item {
-    display: block;
-        padding: 10px 0;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .menu.menu-open .icon_burger span:nth-child(1){
-        top: 18px;
-        width: 0%;
-        left: 50%;
-    }
-
-    .menu.menu-open .icon_burger span:nth-child(2){
-        transform: rotate(45deg);
-    }
-    .menu.menu-open .icon_burger span:nth-child(3){
-        transform: rotate(-45deg);
-    }
-    .menu.menu-open .icon_burger span:nth-child(4){
-        top: 18px;
-        width: 0%;
-        left: 50%;
-    }
-    .menu .menu-open .icon_burger {
-        opacity: 1;
     }
 
 }

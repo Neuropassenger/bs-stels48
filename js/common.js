@@ -92,7 +92,6 @@ $(document).ready(function(){
 
     function genMobMenu() {
         $('.menu_btn').addClass('menu_btn_active');
-        $("body").addClass("fixed");
         $('header').removeClass().addClass('mob_main_menu flex_main flex_column flex_jcontent-between').append($('#main_form'));
         $('.menu_phone').removeClass().addClass('mob_menu flex_main flex_column flex_jcontent-between');
         $('header ul').removeClass();

@@ -131,6 +131,7 @@ header .logo {
 /* Бургер */
 
 .burger {
+    display: none;
     position: fixed;
     width: 55px;
     height: 55px;
@@ -143,11 +144,11 @@ header .logo {
 }
 
 .menu_btn {
-    display: none;
     position: relative;
     margin: 0 auto;
     width: 35px;
     height: 35px;
+    height: 100%;
 }
 
 .menu_btn span,
